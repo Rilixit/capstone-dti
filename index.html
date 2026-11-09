@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loopware — Certified Refurbished Laptops & Devices</title>
+<meta name="description" content="Certified refurbished laptops and devices — 30-point re-certification, 12-month warranty, up to 84% cheaper, ~240 kg CO₂ saved per machine.">
+<meta name="theme-color" id="metaTheme" content="#F2EEE3">
+<script>
+(function(){var t='light';try{t=localStorage.getItem('loopware_theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}catch(e){}
+document.documentElement.dataset.theme=t;})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* ---------- tokens & base ---------- */
+:root{
+  --paper:#F2EEE3; --paper2:#FAF7EE; --ink:#191712; --ink2:#4A463C; --mut:rgba(25,23,18,.55);
+  --line:rgba(25,23,18,.16); --accent:#E8480C; --accent2:#FF6B33; --green:#2F6B3F;
+  --pgreen:#152A1D; --cream:#EFEAD9; --mint:#8FE3A8;
+  --screen:#FCFAF3; --header-bg:rgba(242,238,227,.9); --overlay:rgba(25,23,18,.45);
+  --shadow:rgba(25,23,18,.08); --dash:rgba(25,23,18,.35);
+  --block:#191712; --block-tx:#EFEAD9; --grade-tx:#EFEAD9;
+  color-scheme:light;
+  --f-serif:'Fraunces',Georgia,serif; --f-sans:'Archivo',Helvetica,Arial,sans-serif; --f-mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,monospace;
+}
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#161310; --paper2:#201B15; --ink:#EAE3D3; --ink2:#B3A995; --mut:rgba(234,227,211,.55);
+  --line:rgba(234,227,211,.15); --accent:#FF5A1F; --accent2:#FF7B47; --green:#82C993;
+  --pgreen:#0D1A11;
+  --header-bg:rgba(20,17,14,.86); --overlay:rgba(0,0,0,.62); --shadow:rgba(0,0,0,.5);
+  --dash:rgba(234,227,211,.32);
+  --block:#0C0A07; --block-tx:#EFEAD9; --grade-tx:#17140E;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 1rem/1.6 var(--f-sans);overflow-x:clip;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+button{font-family:inherit;color:inherit}
+::selection{background:var(--accent);color:var(--paper)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+section{scroll-margin-top:80px}
+.mono{font-family:var(--f-mono)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,56px)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--paper);padding:10px 16px;z-index:5000}
+.skip:focus{left:12px;top:12px}
+.grain{position:fixed;inset:0;z-index:4000;pointer-events:none;opacity:.05;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E")}
+html[data-theme="dark"] .grain{filter:invert(1);opacity:.045}
+
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}
+html.js .rv.in{opacity:1;transform:none}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 .8rem/1 var(--f-sans);letter-spacing:.14em;text-transform:uppercase;padding:16px 22px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;text-decoration:none;transition:transform .2s,background .25s,color .25s,box-shadow .2s,border-color .25s;user-select:none}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn.solid:hover{background:var(--accent);border-color:var(--accent);transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.btn.light{border-color:rgba(239,234,217,.65);color:var(--cream);background:transparent}
+.btn.light:hover{background:var(--cream);color:var(--pgreen)}
+.btn .ar{width:11px;height:11px;transition:transform .25s}
+.btn:hover .ar{transform:translate(2px,-2px)}
+.btn.wide{width:100%}
+.icon-btn{background:none;border:0;padding:8px;cursor:pointer;display:grid;place-items:center}
+.icon-btn svg{width:20px;height:20px}
+.theme-btn svg{transition:transform .55s cubic-bezier(.3,1.4,.4,1)}
+.theme-btn.spin svg{transform:rotate(180deg)}
+
+.section{padding:clamp(84px,9vw,140px) 0}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;border-top:1px solid var(--ink);padding-top:14px}
+.sh-left{font:600 11px var(--f-mono);letter-spacing:.16em}
+.sh-left::before{content:"";display:inline-block;width:8px;height:8px;background:var(--accent);margin-right:12px}
+.sh-right{font:500 10.5px var(--f-mono);letter-spacing:.12em;color:var(--mut);text-align:right}
+.section h2{font:500 clamp(2.1rem,4.4vw,3.6rem)/1.04 var(--f-serif);letter-spacing:-.02em;margin:26px 0 clamp(40px,5vw,64px);max-width:24ch}
+.section h2 em{font-style:italic;font-weight:480;color:var(--accent)}
+.body-copy{color:var(--ink2);line-height:1.7;max-width:58ch}
+
+#siteHeader{position:fixed;inset:0 0 auto;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,3.5vw,44px);transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+#siteHeader.scrolled{background:var(--header-bg);backdrop-filter:blur(10px);border-bottom-color:var(--line)}
+.brand{display:flex;align-items:center;gap:10px;font:700 1.05rem var(--f-sans);letter-spacing:.02em;text-decoration:none}
+.brand sup{font:600 8px var(--f-mono);color:var(--accent)}
+.mark{width:22px;height:22px;stroke:var(--ink);fill:none;stroke-width:2.4;stroke-linecap:round;transition:transform .6s cubic-bezier(.3,1.4,.4,1)}
+.brand:hover .mark{transform:rotate(-180deg)}
+.mainnav{display:flex;gap:clamp(16px,2.4vw,34px)}
+.mainnav a{font:500 .8rem var(--f-sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);text-decoration:none;padding:6px 0;position:relative}
+.mainnav a::after{content:"";position:absolute;left:0;bottom:0;height:1.5px;width:0;background:var(--accent);transition:width .3s}
+.mainnav a:hover{color:var(--ink)}
+.mainnav a:hover::after{width:100%}
+.header-actions{display:flex;align-items:center;gap:12px}
+.cart-btn{display:flex;align-items:center;gap:9px;font:600 10.5px var(--f-mono);letter-spacing:.12em;padding:9px 12px;border:1.5px solid var(--ink);background:transparent;cursor:pointer;transition:.25s}
+.cart-btn:hover{background:var(--ink);color:var(--paper)}
+.cart-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8}
+.cart-count{background:var(--accent);color:var(--paper);min-width:19px;height:19px;display:grid;place-items:center;font:600 10.5px var(--f-mono);padding:0 4px}
+.cart-count.pop{animation:pop .35s}
+.menu-btn{display:none}
+.menu-btn svg{width:22px;height:22px;stroke:var(--ink);stroke-width:2;fill:none}
+
+.mmenu{position:fixed;inset:0;background:var(--paper);z-index:950;display:flex;flex-direction:column;padding:18px clamp(20px,5vw,40px) 26px;transform:translateY(-102%);transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.mmenu.open{transform:none}
+.mmenu-top{display:flex;justify-content:space-between;align-items:center;padding:8px 0;font:600 11px var(--f-mono);letter-spacing:.16em}
+.mmenu nav{margin:auto 0;display:flex;flex-direction:column}
+.mmenu nav a{font:600 clamp(1.7rem,7vw,2.3rem) var(--f-serif);text-decoration:none;padding:14px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline}
+.mmenu nav a b{font:600 12px var(--f-mono);color:var(--accent)}
+.mmenu-foot{font:500 10px var(--f-mono);letter-spacing:.14em;color:var(--mut)}
+
+.hero{padding:clamp(130px,16vh,180px) 0 clamp(48px,7vh,80px)}
+.hero-inner{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(40px,5vw,84px);align-items:center}
+.eyebrow{display:flex;align-items:center;gap:12px;font:600 11px var(--f-mono);letter-spacing:.16em;color:var(--accent)}
+.eyebrow::before{content:"";width:34px;height:1.5px;background:var(--accent)}
+.hero h1{font:520 clamp(2.9rem,6.2vw,5.5rem)/0.98 var(--f-serif);letter-spacing:-.025em;margin-top:22px}
+.hero h1 em{font-style:italic;font-weight:470;color:var(--accent)}
+.lede{margin-top:26px;font-size:1.09rem;line-height:1.65;color:var(--ink2);max-width:47ch}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;margin-top:34px;align-items:center}
+.hero-stats{display:flex;flex-wrap:wrap;row-gap:8px;list-style:none;margin-top:44px;padding-top:20px;border-top:1px solid var(--line);font:500 10.5px var(--f-mono);letter-spacing:.12em;color:var(--ink2)}
+.hero-stats li+li::before{content:"·";color:var(--accent);margin:0 14px;font-weight:700}
+html.js .hero-copy>*{animation:rise .85s cubic-bezier(.2,.8,.2,1) both}
+html.js .hero-copy>*:nth-child(2){animation-delay:.06s}
+html.js .hero-copy>*:nth-child(3){animation-delay:.12s}
+html.js .hero-copy>*:nth-child(4){animation-delay:.18s}
+html.js .hero-copy>*:nth-child(5){animation-delay:.24s}
+html.js .hero-viz{animation:rise 1s .2s cubic-bezier(.2,.8,.2,1) both}
+.hero-viz{position:relative;min-width:0;max-width:640px;justify-self:end;width:100%}
+.laptop-wrap{position:relative}
+.lt-body{fill:var(--paper2);stroke:var(--ink);stroke-width:3}
+.lt-screen{fill:var(--screen);stroke:var(--ink);stroke-width:1.5}
+.lt-notch{fill:var(--paper);stroke:var(--ink);stroke-width:1.5}
+.lt-foot,.lt-cam{fill:var(--ink)}
+.lt-text text{font:500 11.5px var(--f-mono);fill:rgba(25,23,18,.78)}
+.lt-text .verdict{fill:var(--accent);font-weight:600}
+.vbox{fill:none;stroke:var(--accent);stroke-width:1.2;stroke-dasharray:3 3;opacity:0;transition:opacity .4s}
+.cur{fill:var(--accent);animation:blink 1.1s steps(1) infinite}
+.hs{cursor:pointer;outline:none}
+.hs-pulse{fill:var(--accent);opacity:.2;transform-box:fill-box;transform-origin:center;animation:pulse 2.6s ease-out infinite}
+.hs-dot{fill:var(--paper2);stroke:var(--ink);stroke-width:2;transition:.25s}
+.hs-line{stroke:var(--ink);stroke-width:1.1;opacity:.45;transition:.25s}
+.hs-label{font:600 11px var(--f-mono);letter-spacing:.14em;fill:var(--ink2);transition:.25s}
+.hs.on .hs-dot,.hs:hover .hs-dot,.hs:focus .hs-dot{fill:var(--accent);stroke:var(--accent)}
+.hs.on .hs-line,.hs:hover .hs-line,.hs:focus .hs-line{stroke:var(--accent);opacity:1}
+.hs.on .hs-label,.hs:hover .hs-label,.hs:focus .hs-label{fill:var(--accent)}
+.readout{margin-top:46px;border:1px dashed var(--dash);padding:14px 18px;font:400 12px/1.7 var(--f-mono);color:var(--ink2);min-height:66px}
+.readout span{color:var(--accent);font-weight:600;letter-spacing:.06em}
+.stamp{position:absolute;right:1%;bottom:-34px;width:clamp(108px,27%,148px);color:var(--accent);transform:rotate(-10deg);cursor:pointer}
+.stamp svg{width:100%;height:auto;overflow:visible}
+.stamp text{fill:currentColor;font-family:var(--f-mono)}
+.stamp-rot{transform-origin:80px 80px;animation:spin 26s linear infinite}
+.stamp-letter{font:800 46px var(--f-serif)}
+.stamp.pop svg{animation:stampIn .5s cubic-bezier(.2,1.5,.4,1)}
+
+.ticker{background:var(--block);color:var(--block-tx);overflow:hidden;padding:11px 0}
+.ticker-track{display:inline-flex;align-items:center;white-space:nowrap;animation:marquee 46s linear infinite;will-change:transform}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.tick{font:500 11.5px var(--f-mono);letter-spacing:.1em;padding:0 18px;opacity:.92}
+.tick-sep{color:var(--accent);font:600 11.5px var(--f-mono)}
+.ticker.alt{background:var(--accent);color:var(--ink)}
+.ticker.alt .tick-sep{color:var(--paper)}
+
+.what-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(48px,6vw,90px)}
+.dict{border-left:3px solid var(--accent);padding-left:26px;margin-bottom:34px}
+.dict-word{font:600 2rem var(--f-serif)}
+.dict-phon{font:400 .72rem var(--f-mono);color:var(--mut);margin-left:10px}
+.dict-def{font:italic 500 1.28rem/1.5 var(--f-serif);color:var(--ink2);margin-top:10px}
+.what-copy .body-copy+.body-copy{margin-top:14px}
+.cmp{width:100%;border-collapse:collapse}
+.cmp th,.cmp td{padding:12px 10px;border-bottom:1px solid var(--line);text-align:center}
+.cmp th{font:600 10px var(--f-mono);letter-spacing:.1em;color:var(--mut)}
+.cmp td:first-child,.cmp th:first-child{text-align:left;font:500 11px var(--f-mono);letter-spacing:.06em;color:var(--ink2)}
+.cmp td{font:500 12px var(--f-mono)}
+.cmp .c-ref{background:var(--paper2);border-inline:1px solid var(--line)}
+.cmp thead .c-ref{border-top:3px solid var(--accent)}
+.cmp .yes{color:var(--green);font-weight:600}
+.cmp .no{color:var(--mut);font-style:italic}
+.ck{width:13px;height:13px;vertical-align:-2px}
+.cmp-note{margin-top:12px;font-size:9.5px;letter-spacing:.1em;color:var(--mut)}
+
+.process-grid{display:grid;grid-template-columns:250px 1fr;gap:clamp(40px,6vw,80px)}
+.process-sticky{position:sticky;top:120px;align-self:start}
+.sticky-num{font:600 clamp(4.4rem,6.5vw,6.8rem)/0.9 var(--f-serif);color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+.sticky-title{font:600 12px var(--f-mono);letter-spacing:.16em;color:var(--accent);margin-top:12px;min-height:1.2em}
+.swap{animation:swap .4s both}
+.steps{list-style:none;position:relative}
+.rail{position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--line)}
+.rail b{position:absolute;top:0;left:0;width:100%;height:0;background:var(--accent);transition:height .5s ease}
+.step{position:relative;padding:44px 0 44px 52px;border-top:1px solid var(--line);opacity:.38;transition:opacity .5s}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step::before{content:"";position:absolute;left:-5.5px;top:56px;width:9px;height:9px;background:var(--paper);border:1.5px solid var(--ink);transition:.3s}
+.step.on{opacity:1}
+.step.on::before{background:var(--accent);border-color:var(--accent)}
+.step-meta{font:600 10.5px var(--f-mono);letter-spacing:.16em;color:var(--accent)}
+.step h3{font:600 1.55rem var(--f-serif);letter-spacing:-.01em;margin-top:10px}
+.step p{color:var(--ink2);margin-top:10px;max-width:58ch;line-height:1.7}
+.step-num{display:none;font:600 11px var(--f-mono);color:var(--accent);letter-spacing:.16em}
+
+.wallet-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(40px,5vw,72px);align-items:start}
+.chart-wrap{border:1px solid var(--line);background:var(--paper2);padding:20px 20px 12px;margin-top:40px}
+.fig-cap{font:500 10px var(--f-mono);letter-spacing:.14em;color:var(--mut);margin-bottom:8px}
+.chart{width:100%;height:auto}
+.ax{stroke:var(--ink);stroke-width:1.5}
+.rrp{stroke:var(--ink);stroke-dasharray:4 5;opacity:.5}
+.ct{font:500 10.5px var(--f-mono);letter-spacing:.08em;fill:var(--ink2)}
+.curve{fill:none;stroke:var(--ink);stroke-width:3;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.8s cubic-bezier(.4,0,.2,1) .25s}
+.rv.in .curve{stroke-dashoffset:0}
+.chart-ann{opacity:0;transition:opacity .6s ease 1.2s}
+.rv.in .chart-ann{opacity:1}
+.ann-acc{fill:var(--accent);font-weight:600}
+.ann-line{stroke:var(--accent);stroke-width:1.2;opacity:.7}
+.buy-dot{fill:var(--accent)}
+.buy-ring{fill:none;stroke:var(--accent);transform-box:fill-box;transform-origin:center;animation:ring 2.2s ease-out infinite}
+.points{list-style:none;margin-top:34px}
+.points li{padding:12px 0;border-top:1px solid var(--line);font:500 10.5px var(--f-mono);letter-spacing:.08em;color:var(--ink2);line-height:1.7}
+.points li::before{content:"↳ ";color:var(--accent)}
+.calc{border:1.5px solid var(--ink);background:var(--paper2);box-shadow:12px 12px 0 var(--shadow)}
+.calc-head{padding:14px 22px;border-bottom:1px solid var(--ink);display:flex;justify-content:space-between;font:600 11px var(--f-mono);letter-spacing:.12em}
+.live i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:7px;animation:livep 1.6s infinite}
+.calc-body{padding:22px}
+.calc-tabs,.calc-grades{display:grid;grid-template-columns:repeat(3,1fr)}
+.calc-tabs{border:1px solid var(--ink)}
+.calc-tabs button{padding:12px 6px;font:600 10.5px var(--f-mono);letter-spacing:.05em;background:none;border:0;border-right:1px solid var(--ink);cursor:pointer;transition:.2s;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.calc-tabs button:last-child{border-right:0}
+.calc-tabs button.active{background:var(--ink);color:var(--paper)}
+.calc-tabs button[disabled]{cursor:default;opacity:.5}
+.calc-grades{margin-top:12px;border:1px solid var(--line)}
+.calc-grades button{padding:11px 6px;font:600 10.5px var(--f-mono);letter-spacing:.05em;background:none;border:0;border-right:1px solid var(--line);cursor:pointer;transition:.2s}
+.calc-grades button:last-child{border-right:0}
+.calc-grades button.active{background:var(--accent);color:var(--paper)}
+.calc-hint{margin-top:10px;font:500 10.5px var(--f-mono);letter-spacing:.06em;color:var(--mut);min-height:1.3em}
+.receipt{margin-top:20px;border:1.5px solid var(--ink);padding:20px 20px 16px;background:var(--paper);transform:rotate(-.4deg)}
+.r-num{display:flex;justify-content:space-between;font:500 10px var(--f-mono);letter-spacing:.16em;color:var(--mut)}
+.r-device{font:600 1.45rem var(--f-serif);margin-top:12px}
+.r-grade{font:600 10.5px var(--f-mono);letter-spacing:.1em;color:var(--accent);margin-top:4px}
+.r-row{display:flex;justify-content:space-between;align-items:baseline;padding:11px 0 0;margin-top:12px;border-top:1px dashed var(--line)}
+.r-lab{font:500 10.5px var(--f-mono);letter-spacing:.12em;color:var(--mut)}
+.r-row s{font:500 1rem var(--f-mono);color:var(--mut)}
+.r-big strong{font:600 2.3rem var(--f-mono);letter-spacing:-.02em}
+.r-save{margin-top:16px;background:var(--accent);color:var(--paper);display:inline-block;padding:8px 12px;font:600 11px var(--f-mono);letter-spacing:.1em}
+.r-mini span{font:500 10.5px var(--f-mono);letter-spacing:.1em;color:var(--ink2)}
+.barcode{height:26px;width:100%;margin:18px 0 6px}
+.barcode rect{fill:var(--ink)}
+.r-sku{font:500 9.5px var(--f-mono);letter-spacing:.3em;color:var(--mut);text-align:center}
+#rAdd{margin-top:16px}
+
+.planet{background:var(--pgreen);color:var(--cream)}
+.planet .section-head{border-color:rgba(239,234,217,.4)}
+.planet .sh-left{color:var(--cream)}
+.planet .sh-right{color:rgba(239,234,217,.55)}
+.planet h2 em{color:var(--mint)}
+.planet-lede{max-width:62ch;color:rgba(239,234,217,.8);line-height:1.7;font-size:1.1rem;margin-top:-14px}
+.planet-stats{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(40px,5vw,72px);margin-top:clamp(40px,5vw,72px);align-items:start}
+.sh-num{font:600 clamp(4.4rem,8.5vw,7.2rem)/0.9 var(--f-serif);color:var(--mint);letter-spacing:-.02em}
+.sh-label{font:500 11px var(--f-mono);letter-spacing:.14em;color:rgba(239,234,217,.6);margin-top:16px;max-width:34ch;line-height:1.8}
+.ss-row{border-top:1px solid rgba(239,234,217,.22);padding:20px 0}
+.ss-row strong{font:600 1.9rem var(--f-serif);color:var(--mint)}
+.ss-row p{color:rgba(239,234,217,.72);margin-top:6px;max-width:46ch}
+.bars{margin-top:clamp(48px,6vw,76px);max-width:800px}
+.bar-row{display:grid;grid-template-columns:210px 1fr 64px;gap:16px;align-items:center;margin-top:14px}
+.bar-label{font:500 10.5px var(--f-mono);letter-spacing:.1em;color:rgba(239,234,217,.65)}
+.bar{height:30px;border:1px solid rgba(239,234,217,.35)}
+.bar i{display:block;height:100%;width:0;background:rgba(239,234,217,.5);transition:width 1.4s cubic-bezier(.2,.8,.2,1) .2s}
+.bar i.alt{background:var(--mint)}
+.bars-in .bar i{width:var(--w)}
+.bar-val{font:500 11px var(--f-mono);text-align:right}
+.bars-cap{margin-top:20px;font:500 10.5px var(--f-mono);letter-spacing:.1em;color:rgba(239,234,217,.65)}
+.bars-src{margin-top:6px;font:400 9.5px var(--f-mono);letter-spacing:.1em;color:rgba(239,234,217,.38)}
+.tradein{margin-top:clamp(56px,7vw,96px);border-top:1px solid rgba(239,234,217,.25);padding-top:clamp(40px,5vw,64px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,72px)}
+.ti-copy h3{font:600 2rem var(--f-serif)}
+.ti-copy p{color:rgba(239,234,217,.72);margin-top:14px;max-width:52ch;line-height:1.7}
+.ti-tool{display:flex;flex-direction:column;gap:22px}
+.ti-field label{display:block;font:500 10.5px var(--f-mono);letter-spacing:.16em;color:rgba(239,234,217,.55);margin-bottom:10px}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg button{font:600 11px var(--f-mono);letter-spacing:.06em;padding:10px 14px;border:1px solid rgba(239,234,217,.4);background:none;cursor:pointer;transition:.2s}
+.seg button.active{background:var(--cream);color:var(--pgreen);border-color:var(--cream)}
+.ti-quote{display:flex;justify-content:space-between;align-items:baseline;gap:16px;border-top:1px dashed rgba(239,234,217,.35);padding-top:18px}
+.ti-quote span{font:500 10.5px var(--f-mono);letter-spacing:.16em;color:rgba(239,234,217,.55)}
+.ti-quote strong{font:600 1.7rem var(--f-mono);color:var(--mint)}
+#tiQuote.pop{animation:quotePop .35s}
+.ti-note{font:400 9.5px var(--f-mono);letter-spacing:.12em;color:rgba(239,234,217,.4)}
+
+.recycle-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px}
+.rc-card{background:var(--paper);padding:32px 28px}
+.rc-icon{width:36px;height:36px;margin-bottom:18px;stroke:var(--ink);fill:none;stroke-width:1.5}
+.rc-card h4{font:600 10.5px var(--f-mono);letter-spacing:.16em;color:var(--accent);margin-bottom:10px}
+.rc-card h3{font:600 1.4rem var(--f-serif);margin-bottom:12px;letter-spacing:-.01em}
+.rc-card p{color:var(--ink2);line-height:1.7}
+
+.shop-top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:8px}
+.shop-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{font:600 11px var(--f-mono);letter-spacing:.1em;padding:9px 14px;border:1px solid var(--line);background:transparent;cursor:pointer;transition:.2s}
+.filters button:hover{border-color:var(--ink)}
+.filters button.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.mini-btn{font:600 10px var(--f-mono);letter-spacing:.08em;padding:9px 12px;border:1.5px solid var(--ink);background:transparent;cursor:pointer;transition:.2s;white-space:nowrap}
+.mini-btn:hover{background:var(--ink);color:var(--paper)}
+.mini-btn.accent{border-color:var(--accent);color:var(--accent)}
+.mini-btn.accent:hover{background:var(--accent);color:var(--paper)}
+.mini-btn.danger.armed{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.shop-count{font:500 10.5px var(--f-mono);letter-spacing:.14em;color:var(--mut);margin:14px 0 18px}
+.ledger-cap{display:grid;grid-template-columns:34px 92px 1fr auto;padding:10px 0;font:500 10px var(--f-mono);letter-spacing:.14em;color:var(--mut)}
+.ledger-cap span:last-child{text-align:right}
+.ledger{border-bottom:1px solid var(--line)}
+.shop-empty{padding:34px 0;border-top:1px solid var(--line);font:500 11px var(--f-mono);letter-spacing:.14em;color:var(--mut)}
+.row{display:grid;grid-template-columns:34px 92px minmax(0,1fr) auto;gap:20px;align-items:center;padding:22px 0;border-top:1px solid var(--line);transition:background .25s}
+.row:hover{background:var(--paper2)}
+.row.hide{display:none}
+.row-idx{font:500 11px var(--f-mono);color:var(--mut)}
+.row:hover .row-idx{color:var(--accent)}
+.row-main h3{font:600 1.18rem var(--f-serif);letter-spacing:-.01em}
+.row-tag{font:italic 500 .92rem var(--f-serif);color:var(--mut)}
+.row-specs{margin-top:6px;font:500 11px var(--f-mono);letter-spacing:.06em;color:var(--ink2)}
+.row-side{display:flex;align-items:center;gap:26px}
+.row-badges{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.grade{width:24px;height:24px;display:grid;place-items:center;font:600 12px var(--f-mono);color:var(--grade-tx)}
+.gA{background:var(--green)}.gB{background:var(--accent)}.gC{background:var(--ink)}
+.chip{font:500 10px var(--f-mono);letter-spacing:.06em;border:1px solid var(--line);padding:4px 8px;color:var(--ink2);white-space:nowrap}
+.chip.hot{border-color:var(--accent);color:var(--accent)}
+.row-price{text-align:right}
+.row-price s{display:block;font:500 11px var(--f-mono);color:var(--mut)}
+.row-price strong{font:600 1.15rem var(--f-mono)}
+.add-btn{font:600 11px var(--f-mono);letter-spacing:.1em;padding:11px 14px;border:1.5px solid var(--ink);background:transparent;cursor:pointer;transition:.2s;white-space:nowrap}
+.add-btn:hover{background:var(--ink);color:var(--paper)}
+.add-btn.ok{background:var(--green);border-color:var(--green);color:var(--paper)}
+.add-btn:disabled{opacity:.4;cursor:not-allowed}
+.thumb .body{fill:none;stroke:var(--ink);stroke-width:2.5}
+.thumb .scr{fill:var(--paper2);stroke:var(--ink);stroke-width:1.5;transition:fill .35s}
+.thumb .dot{fill:var(--ink)}
+.row:hover .scr{fill:var(--accent)}
+.shop-note{margin-top:22px;font:500 10px var(--f-mono);letter-spacing:.14em;color:var(--mut)}
+
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(48px,6vw,90px)}
+.faq-left{position:sticky;top:110px;align-self:start}
+.copy-mail{margin-top:26px;display:inline-flex;align-items:center;gap:10px;font:600 12px var(--f-mono);letter-spacing:.08em;border:1.5px solid var(--ink);padding:12px 16px;background:none;cursor:pointer;transition:.25s}
+.copy-mail:hover{background:var(--ink);color:var(--paper)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;background:none;border:0;cursor:pointer;text-align:left;font:600 1.12rem var(--f-serif);letter-spacing:-.01em}
+.chev{width:16px;height:16px;flex-shrink:0;transition:transform .35s;color:var(--accent)}
+.faq-item.open .chev{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1)}
+.faq-a p{padding:0 40px 24px 0;color:var(--ink2);line-height:1.7;font-size:.98rem}
+
+footer{background:var(--block);color:var(--block-tx);padding-top:clamp(70px,8vw,110px)}
+.foot-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px}
+.f-label{font:600 11px var(--f-mono);letter-spacing:.16em;color:var(--accent2)}
+.f-copy{margin-top:14px;color:rgba(239,234,217,.75);max-width:44ch;line-height:1.7}
+#newsForm{display:flex;margin-top:20px;max-width:440px}
+#newsInput{flex:1;min-width:0;background:transparent;border:1.5px solid rgba(239,234,217,.5);border-right:none;color:var(--cream);padding:14px 16px;font:500 .95rem var(--f-sans);outline:none;transition:border-color .25s}
+#newsInput::placeholder{color:rgba(239,234,217,.4)}
+#newsInput:focus{border-color:var(--cream)}
+#newsForm.err #newsInput{border-color:var(--accent2)}
+.fbtn{border-color:rgba(239,234,217,.6);color:var(--cream)}
+.fbtn:hover{background:var(--accent2);border-color:var(--accent2);color:var(--ink)}
+.form-msg{display:block;margin-top:10px;font:500 11px var(--f-mono);color:var(--accent2);min-height:1.3em}
+.foot-links{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.foot-links h4{font:600 10.5px var(--f-mono);letter-spacing:.18em;color:rgba(239,234,217,.5);margin-bottom:14px}
+.foot-links a{display:block;color:rgba(239,234,217,.82);text-decoration:none;padding:5px 0;font-size:.95rem}
+.foot-links a:hover{color:var(--cream);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--accent2)}
+.giant-mark{font:600 clamp(4.2rem,14vw,12rem)/0.82 var(--f-serif);letter-spacing:-.04em;margin-top:clamp(48px,7vw,90px);color:var(--cream)}
+.giant-mark span{color:var(--accent2)}
+.foot-base{border-top:1px solid rgba(239,234,217,.2);margin-top:34px;padding:20px 0 26px;display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between;font:500 10.5px var(--f-mono);letter-spacing:.1em;color:rgba(239,234,217,.55)}
+.foot-base a{color:inherit;text-decoration:none}
+.foot-base a:hover{color:var(--cream)}
+
+.drawer-overlay{position:fixed;inset:0;background:var(--overlay);z-index:1100;opacity:0;pointer-events:none;transition:opacity .4s}
+.drawer-overlay.on{opacity:1;pointer-events:auto}
+.cart-drawer{position:fixed;top:0;right:0;height:100%;width:min(460px,100%);background:var(--paper);z-index:1200;border-left:1.5px solid var(--ink);transform:translateX(103%);transition:transform .5s cubic-bezier(.22,1,.36,1);display:flex;flex-direction:column}
+.cart-drawer.open{transform:none}
+.cd-head{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1.5px solid var(--ink)}
+.cd-head>span{font:600 11px var(--f-mono);letter-spacing:.14em}
+.cd-body{flex:1;overflow-y:auto;padding:6px 22px;scrollbar-width:thin}
+.cd-item{display:grid;grid-template-columns:1fr auto auto auto;gap:6px 16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.cd-info strong{display:block;font:600 .98rem var(--f-sans)}
+.cd-info .mono{font:500 10.5px var(--f-mono);color:var(--mut);letter-spacing:.06em}
+.cd-qty{display:flex;align-items:center;border:1px solid var(--ink)}
+.cd-qty button{width:26px;height:26px;background:none;border:0;font:700 14px var(--f-mono);cursor:pointer}
+.cd-qty span{width:26px;text-align:center;font:500 12px var(--f-mono)}
+.cd-x{background:none;border:0;cursor:pointer;font-size:14px;color:var(--mut)}
+.cd-x:hover{color:var(--accent)}
+.cd-item>strong{font:600 .95rem var(--f-mono)}
+.cd-empty{padding:70px 10px;text-align:center;color:var(--ink2)}
+.cd-empty .mono{font:600 11px var(--f-mono);letter-spacing:.14em;margin-bottom:10px;display:block}
+.cd-empty p{margin-bottom:22px}
+.cd-foot{border-top:1.5px solid var(--ink);padding:18px 22px 20px}
+.cd-row{display:flex;justify-content:space-between;align-items:baseline;font:500 11.5px var(--f-mono);letter-spacing:.08em;color:var(--ink2);padding:5px 0}
+.cd-row strong{font:600 .95rem var(--f-mono);color:var(--ink)}
+.cd-row.save strong{color:var(--accent)}
+.cd-row.co2 strong{color:var(--mint)}
+.cd-note{margin-top:12px;text-align:center;font:500 9.5px var(--f-mono);letter-spacing:.14em;color:var(--mut)}
+#checkoutBtn{margin-top:14px}
+
+.ed-drawer{position:fixed;top:0;right:0;height:100%;width:min(560px,100%);background:var(--paper);z-index:1200;border-left:1.5px solid var(--ink);transform:translateX(103%);transition:transform .5s cubic-bezier(.22,1,.36,1);display:flex;flex-direction:column}
+.ed-drawer.open{transform:none}
+.ed-head{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1.5px solid var(--ink)}
+.ed-head>span{font:600 11px var(--f-mono);letter-spacing:.14em}
+.ed-hint{padding:10px 22px;font:500 9.5px var(--f-mono);letter-spacing:.1em;color:var(--mut);border-bottom:1px dashed var(--line);line-height:1.7}
+.ed-body{flex:1;overflow-y:auto;padding:18px 22px 26px;scrollbar-width:thin}
+.ed-listhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+.ed-listhead>span{font:600 10.5px var(--f-mono);letter-spacing:.14em;color:var(--mut)}
+.ed-actions-top{display:flex;gap:8px;flex-wrap:wrap}
+.ed-row{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.ed-row.editing{box-shadow:inset 3px 0 0 var(--accent);background:var(--paper2)}
+.ed-row .idx{font:500 10px var(--f-mono);color:var(--mut);width:22px;flex-shrink:0}
+.ed-row .n{flex:1;min-width:0}
+.ed-row .n strong{font:600 .92rem var(--f-sans);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ed-row .n span{font:500 9.5px var(--f-mono);letter-spacing:.06em;color:var(--mut)}
+.ed-form{margin-top:26px;border-top:1.5px solid var(--ink);padding-top:18px}
+.ed-form-title{font:600 10.5px var(--f-mono);letter-spacing:.16em;color:var(--accent);margin-bottom:14px}
+.ed-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.span2{grid-column:1/-1}
+.field b{font:600 9.5px var(--f-mono);letter-spacing:.14em;color:var(--ink2)}
+.field input,.field select{border:1.5px solid var(--ink);background:var(--paper2);padding:10px 12px;font:500 1rem var(--f-sans);color:var(--ink);outline:none;transition:border-color .2s;border-radius:0;width:100%}
+.field select{cursor:pointer}
+.field input:focus,.field select:focus{border-color:var(--accent)}
+.ed-msg{margin-top:12px;font:600 10.5px var(--f-mono);letter-spacing:.08em;color:var(--accent);min-height:1.2em}
+.ed-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+
+.toaster{position:fixed;left:20px;bottom:20px;z-index:3500;display:flex;flex-direction:column;gap:10px}
+.toast{background:var(--block);color:var(--block-tx);border-left:3px solid var(--accent);padding:13px 18px;font:500 12px/1.5 var(--f-mono);max-width:340px;opacity:0;transform:translateY(14px);transition:.35s}
+.toast.on{opacity:1;transform:none}
+
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{0%{transform:scale(.5);opacity:.5}75%{transform:scale(1.7);opacity:0}100%{opacity:0}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.45)}100%{transform:scale(1)}}
+@keyframes stampIn{0%{transform:scale(1.6) rotate(6deg);opacity:0}60%{transform:scale(.94) rotate(-1deg);opacity:1}100%{transform:scale(1) rotate(0)}}
+@keyframes swap{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes ring{from{transform:scale(1);opacity:.7}to{transform:scale(2.6);opacity:0}}
+@keyframes livep{50%{opacity:.25}}
+@keyframes quotePop{from{opacity:.2;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+@media(max-width:1080px){
+  .hero-inner{grid-template-columns:1fr;gap:56px}
+  .hero-viz{justify-self:center}
+  .process-grid{grid-template-columns:1fr}
+  .process-sticky{display:none}
+  .step-num{display:block;margin-bottom:8px}
+}
+@media(max-width:900px){
+  .mainnav{display:none}
+  .menu-btn{display:grid}
+  .what-grid,.wallet-grid,.planet-stats,.tradein,.faq-grid,.foot-grid,.recycle-grid{grid-template-columns:1fr}
+  .faq-left{position:static}
+  .ledger-cap{display:none}
+  .row{grid-template-columns:64px 1fr;row-gap:14px}
+  .row-idx{display:none}
+  .row-side{grid-column:1/-1;flex-wrap:wrap;gap:12px 20px}
+}
+@media(max-width:640px){
+  .section-head .sh-right{display:none}
+  .receipt{transform:none}
+  .bar-row{grid-template-columns:1fr;gap:6px}
+  .bar-val{text-align:left}
+  .calc-body{padding:16px}
+  .hero-stats{gap:6px 0}
+  .row-thumb{width:56px}
+  .stamp{bottom:-20px}
+  .readout{margin-top:32px}
+  .btn{padding:14px 18px}
+  .ed-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header id="siteHeader">
+  <a class="brand" href="#top" aria-label="Loopware — home">
+    <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.35-5.65"/><path d="M20 2.8v4.4h-4.4"/></svg>
+    LOOPWARE<sup>®</sup>
+  </a>
+  <nav class="mainnav" aria-label="Main">
+    <a href="#what">What is refurb?</a>
+    <a href="#process">Process</a>
+    <a href="#wallet">Wallet</a>
+    <a href="#planet">Planet</a>
+    <a href="#recycle">Recycling</a>
+    <a href="#shop">Shop</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn theme-btn" id="themeBtn" aria-label="Switch to dark mode">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.2A8.2 8.2 0 1 1 10.8 3.4a6.6 6.6 0 0 0 9.8 9.8Z"/></svg>
+    </button>
+    <button class="cart-btn" id="cartOpen" aria-label="Open cart">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12.2a1.5 1.5 0 0 1-1.5 1.3H7.7a1.5 1.5 0 0 1-1.5-1.3Z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg>
+      BENCH <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M3 8h18M3 16h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <div class="mmenu-top"><span class="mono">LOOPWARE — MENU</span>
+    <button class="icon-btn" id="mmClose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="#what"><span>What is refurb?</span><b class="mono">01</b></a>
+    <a href="#process"><span>The process</span><b class="mono">02</b></a>
+    <a href="#wallet"><span>Your wallet</span><b class="mono">03</b></a>
+    <a href="#planet"><span>The planet</span><b class="mono">04</b></a>
+    <a href="#recycle"><span>Nothing wasted</span><b class="mono">05</b></a>
+    <a href="#shop"><span>On the bench</span><b class="mono">06</b></a>
+    <a href="#faq"><span>FAQ</span><b class="mono">07</b></a>
+  </nav>
+  <div class="mmenu-foot mono">12-MO WARRANTY · 30-DAY RETURNS · FREE SHIPPING</div>
+</div>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow mono">CERTIFIED REFURBISHED ELECTRONICS · EST. 2019 · DOHA, QATAR</p>
+        <h1>Great machines<br><em>deserve second lives.</em></h1>
+        <p class="lede">We take the laptops and devices companies discard on two-year upgrade cycles, run every one through a 30-point re-certification, and sell them back to you for up to 84% less — with a 12-month warranty and ~240&nbsp;kg of CO₂ left unspent per machine.</p>
+        <div class="hero-cta">
+          <a class="btn solid" href="#shop">Shop the bench
+            <svg class="ar" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M4 2.5h5.5V8"/></svg></a>
+          <a class="btn ghost" href="#what">What does “refurb” mean?</a>
+        </div>
+        <ul class="hero-stats">
+          <li>30-POINT INSPECTION</li><li>12-MO WARRANTY</li><li>30-DAY RETURNS</li><li>PLASTIC-FREE PACK</li>
+        </ul>
+      </div>
+      <div class="hero-viz">
+        <div class="laptop-wrap">
+          <svg class="laptop" viewBox="0 0 640 420" role="img" aria-label="A Loopware diagnostic running on a re-certified laptop">
+            <rect x="120" y="30" width="280" height="192" rx="12" class="lt-body"/>
+            <rect x="134" y="44" width="252" height="164" rx="4" class="lt-screen"/>
+            <circle cx="260" cy="37" r="2" class="lt-cam"/>
+            <path d="M92 230 L428 230 L462 276 Q466 284 455 284 L65 284 Q54 284 58 276 Z" class="lt-body"/>
+            <rect x="252" y="267" width="56" height="9" rx="4.5" class="lt-notch"/>
+            <rect x="86" y="289" width="26" height="6" rx="2" class="lt-foot"/>
+            <rect x="408" y="289" width="26" height="6" rx="2" class="lt-foot"/>
+            <g class="lt-text">
+              <text x="148" y="70" id="dl0"></text>
+              <text x="148" y="90" id="dl1"></text>
+              <text x="148" y="110" id="dl2"></text>
+              <text x="148" y="130" id="dl3"></text>
+              <text x="148" y="150" id="dl4"></text>
+              <text x="148" y="170" id="dl5"></text>
+              <text x="152" y="194" id="dl6" class="verdict"></text>
+            </g>
+            <rect id="vBox" x="144" y="179" width="234" height="23" class="vbox"/>
+            <rect id="cur" x="148" y="60" width="7" height="12" class="cur"/>
+            <g class="hs" tabindex="0" data-key="display">
+              <circle class="hs-pulse" cx="396" cy="54" r="11"/><circle class="hs-dot" cx="396" cy="54" r="4.5"/>
+              <line class="hs-line" x1="396" y1="54" x2="438" y2="38"/><text class="hs-label" x="443" y="41">DISPLAY</text>
+            </g>
+            <g class="hs" tabindex="0" data-key="battery">
+              <circle class="hs-pulse" cx="128" cy="252" r="11"/><circle class="hs-dot" cx="128" cy="252" r="4.5"/>
+              <line class="hs-line" x1="128" y1="252" x2="78" y2="316"/><text class="hs-label" x="24" y="334">BATTERY</text>
+            </g>
+            <g class="hs" tabindex="0" data-key="keyboard">
+              <circle class="hs-pulse" cx="258" cy="254" r="11"/><circle class="hs-dot" cx="258" cy="254" r="4.5"/>
+              <line class="hs-line" x1="258" y1="254" x2="258" y2="314"/><text class="hs-label" x="258" y="334" text-anchor="middle">KEYBOARD</text>
+            </g>
+            <g class="hs" tabindex="0" data-key="io">
+              <circle class="hs-pulse" cx="438" cy="256" r="11"/><circle class="hs-dot" cx="438" cy="256" r="4.5"/>
+              <line class="hs-line" x1="438" y1="256" x2="492" y2="300"/><text class="hs-label" x="468" y="322">I/O PORTS</text>
+            </g>
+          </svg>
+          <div class="stamp" id="stamp" role="button" tabindex="0" aria-label="Certification stamp — click to re-stamp">
+            <svg viewBox="0 0 160 160">
+              <defs><path id="stampPath" d="M80 80m-56 0a56 56 0 1 1 112 0a56 56 0 1 1 -112 0"/></defs>
+              <circle cx="80" cy="80" r="75" fill="none" stroke="currentColor" stroke-width="3.5"/>
+              <circle cx="80" cy="80" r="41" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <g class="stamp-rot"><text font-size="12.5" letter-spacing="3.6"><textPath href="#stampPath">LOOPWARE · CERTIFIED · GRADE A</textPath></text></g>
+              <text x="80" y="95" text-anchor="middle" class="stamp-letter">A</text>
+            </svg>
+          </div>
+        </div>
+        <div class="readout mono" id="readout"><span>TEST REPORT —</span> hover or tap a node on the machine to read its actual results.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div class="ticker-track" id="tick1">
+    <span class="tick">BENCH 02 — THINKPAD X1C G9 — GRADE A — 94% BATT — QA PASSED 14:02</span><span class="tick-sep">///</span>
+    <span class="tick">BENCH 05 — MACBOOK AIR M1 — GRADE B — 91% BATT — IN CLEANING</span><span class="tick-sep">///</span>
+    <span class="tick">BENCH 01 — IPHONE 13 — NEW CELL FITTED — AWAITING QA</span><span class="tick-sep">///</span>
+    <span class="tick">BENCH 04 — DELL XPS 13 — GRADE C — SOLD IN 26 MIN — RESTOCK SOON</span><span class="tick-sep">///</span>
+    <span class="tick">BENCH 03 — IPAD AIR 4 — 30-POINT PASSED — LISTED</span><span class="tick-sep">///</span>
+    <span class="tick">INTAKE — 41 UNITS OFF A CORPORATE LEASE — WIPED — QUEUED</span><span class="tick-sep">///</span>
+  </div></div>
+
+  <section id="what" class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="sh-left mono">01 — WHAT REFURB MEANS</span><span class="sh-right mono">A DEFINITION, A TABLE, NO FINE PRINT</span></div>
+      <h2>Refurbished <em>≠</em> used.</h2>
+      <div class="what-grid">
+        <div class="what-copy rv">
+          <div class="dict">
+            <div class="dict-word">re·fur·bished <span class="dict-phon">/riːˈfɜːbɪʃt/ · adj.</span></div>
+            <p class="dict-def">A previously owned device restored to full working order through professional inspection, repair and cleaning — then resold with a warranty, and a clear conscience included.</p>
+          </div>
+          <p class="body-copy">A used laptop is a gamble: you’re buying whatever the last owner left behind, blessed or cursed. A refurbished one has been through a workshop first — inspected part by part, repaired where needed, wiped clean of its previous life, graded honestly and sealed with a warranty.</p>
+          <p class="body-copy">Same machine. Minus the mystery, minus the markup.</p>
+        </div>
+        <div class="cmp-wrap rv" style="--d:.12s">
+          <table class="cmp">
+            <thead><tr><th></th><th>USED — A GAMBLE</th><th class="c-ref">REFURB — LOOPWARE</th><th>NEW — FULL PRICE</th></tr></thead>
+            <tbody>
+              <tr><td>30-POINT TEST</td><td class="no">NONE</td><td class="c-ref yes">30/30 <svg class="ck" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 8.6l3.3 3.2L13 4.6"/></svg></td><td class="no">FACTORY ONLY</td></tr>
+              <tr><td>FAULTY PARTS</td><td class="no">YOUR PROBLEM</td><td class="c-ref yes">REPLACED</td><td class="no">—</td></tr>
+              <tr><td>BATTERY</td><td class="no">A GUESS</td><td class="c-ref yes">≥85% OR NEW</td><td class="no">100%</td></tr>
+              <tr><td>PREVIOUS DATA</td><td class="no">INHERITED</td><td class="c-ref yes">NIST-WIPED</td><td class="no">—</td></tr>
+              <tr><td>WARRANTY</td><td class="no">NONE</td><td class="c-ref yes">12 MONTHS</td><td class="no">12 MONTHS</td></tr>
+              <tr><td>PRICE</td><td class="no">MSRP − A BIT</td><td class="c-ref yes">−50–84%</td><td class="no">MSRP</td></tr>
+            </tbody>
+          </table>
+          <p class="cmp-note mono">* SAVINGS FROM CURRENT BENCH PRICING VS LAUNCH RRP. ALL PRICES IN QAR.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="sh-left mono">02 — THE PROCESS</span><span class="sh-right mono">AVG. TURNAROUND: 3 DAYS</span></div>
+      <h2>Six gates between <em>their drawer and your desk.</em></h2>
+      <div class="process-grid">
+        <div class="process-sticky" aria-hidden="true">
+          <div class="sticky-num" id="stickyNum">01</div>
+          <div class="sticky-title" id="stickyTitle">SOURCED</div>
+        </div>
+        <ol class="steps" id="steps">
+          <i class="rail" aria-hidden="true"><b id="pFill"></b></i>
+          <li class="step" data-num="01" data-title="SOURCED">
+            <span class="step-num mono">STEP 01</span>
+            <div class="step-meta mono">DAY 0 — INTAKE</div>
+            <h3>Sourced, serialised, wiped.</h3>
+            <p>Corporations retire perfectly good machines every 24–36 months. Lease returns, trade-ins, overstocks — they all land on our intake bench, get logged by serial number, and have every drive erased to the NIST 800-88 standard before anything else happens. Your data stays yours; theirs stays gone.</p>
+          </li>
+          <li class="step" data-num="02" data-title="INSPECTED">
+            <span class="step-num mono">STEP 02</span>
+            <div class="step-meta mono">60–90 MINUTES</div>
+            <h3>Sixty minutes of suspicion.</h3>
+            <p>A 30-point checklist leaves nothing to charm: display uniformity, hinges, every port, webcam, speakers, keyboard, trackpad, thermals, Wi-Fi, Bluetooth. Battery health is read straight from the controller — never guessed at.</p>
+          </li>
+          <li class="step" data-num="03" data-title="REPAIRED">
+            <span class="step-num mono">STEP 03</span>
+            <div class="step-meta mono">AS NEEDED</div>
+            <h3>Fixed properly, or not shipped.</h3>
+            <p>Anything below spec gets replaced — batteries under 85% health always are, fitted with new cells. Failed parts go back into our recycling stream, never into a landfill. If we couldn’t fix it, you’ll simply never see it listed.</p>
+          </li>
+          <li class="step" data-num="04" data-title="CLEANED">
+            <span class="step-num mono">STEP 04</span>
+            <div class="step-meta mono">20 MINUTES</div>
+            <h3>Cleaner than your last phone.</h3>
+            <p>Chassis ultrasonic-cleaned, keyboard de-grimed key by key, screen polished to nothing. The test: it should smell like a new machine and absolutely nothing like its previous owner’s karak.</p>
+          </li>
+          <li class="step" data-num="05" data-title="GRADED">
+            <span class="step-num mono">STEP 05</span>
+            <div class="step-meta mono">HONEST COSMETICS</div>
+            <h3>Graded by hand, photographed for real.</h3>
+            <p>A means no visible wear at arm’s length. B means light marks that will never affect a single pixel. C means it has lived — and is priced like it. Every listing shows the actual unit, not a stock photo of “one like it”.</p>
+          </li>
+          <li class="step" data-num="06" data-title="CERTIFIED">
+            <span class="step-num mono">STEP 06</span>
+            <div class="step-meta mono">12-MO WARRANTY</div>
+            <h3>Sealed with a passport.</h3>
+            <p>Each machine ships in recycled, plastic-free packaging with its own printed passport: test results, battery health, grade, and a 12-month warranty. Thirty days to change your mind, free return label in the box.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="wallet" class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="sh-left mono">03 — FOR YOUR WALLET</span><span class="sh-right mono">DEPRECIATION IS SOMEONE ELSE’S PROBLEM</span></div>
+      <h2>Your wallet notices <em>first.</em></h2>
+      <div class="wallet-grid">
+        <div class="wallet-left rv">
+          <p class="body-copy">A new laptop loses roughly 40% of its value in its first twelve months — the steepest tax in tech. When you buy refurbished, someone else already paid it: you pick the machine up after the drop, at its flat, honest price, with the same silicon and a warranty that often outlasts the time its first owner ever spent with it.</p>
+          <div class="chart-wrap">
+            <div class="fig-cap mono">FIG. 1 — RESALE VALUE OF A QAR 5,999 LAPTOP, YEARS 0–3</div>
+            <svg class="chart" viewBox="0 0 520 300" aria-hidden="true">
+              <line class="ax" x1="46" y1="252" x2="492" y2="252"/>
+              <line class="rrp" x1="46" y1="70" x2="492" y2="70"/>
+              <text class="ct" x="488" y="60" text-anchor="end">RRP — FULL NEW PRICE</text>
+              <path class="curve" pathLength="1" d="M60 70 C 98 74 106 132 140 176 C 172 214 214 230 272 240 C 336 249 424 251 480 252"/>
+              <g class="chart-ann">
+                <text class="ct ann-acc" x="176" y="112">−40% IN YEAR ONE — SOMEONE ELSE ATE IT</text>
+                <line class="ann-line" x1="172" y1="117" x2="122" y2="152"/>
+                <circle class="buy-ring" cx="236" cy="232" r="7"/>
+                <circle class="buy-dot" cx="236" cy="232" r="5.5"/>
+                <text class="ct ann-acc" x="252" y="216">YOU BUY HERE — POST-DROP PRICE</text>
+              </g>
+              <text class="ct" x="60" y="274">YEAR 0</text>
+              <text class="ct" x="196" y="274">YEAR 1</text>
+              <text class="ct" x="336" y="274">YEAR 2</text>
+              <text class="ct" x="462" y="274">YEAR 3</text>
+            </svg>
+          </div>
+          <ul class="points">
+            <li>NEW MACHINES LOSE ~40% OF VALUE IN YEAR ONE — REFURB PRICE = THE POST-DROP PRICE</li>
+            <li>SAME SCREEN, SAME KEYBOARD, SAME CHIP. THE ONLY MISSING PART IS THE “NEW” TAX</li>
+            <li>OUR 12-MONTH WARRANTY TYPICALLY OUTLASTS THE FIRST OWNER’S ENTIRE TIME WITH IT</li>
+          </ul>
+        </div>
+        <div class="calc rv" style="--d:.15s">
+          <div class="calc-head mono"><span>PRICE CHECK — INSTANT</span><span class="live"><i></i>LIVE</span></div>
+          <div class="calc-body">
+            <div class="calc-tabs" id="calcTabs" role="tablist" aria-label="Choose a device"></div>
+            <div class="calc-grades" id="calcGrades" aria-label="Choose a grade">
+              <button class="active" data-g="A">A — MINT</button>
+              <button data-g="B">B — LIGHT WEAR</button>
+              <button data-g="C">C — HONEST WEAR</button>
+            </div>
+            <p class="calc-hint" id="calcHint"></p>
+            <div class="receipt">
+              <div class="r-num"><span id="rNum">EST. Nº LW-8412</span><span id="rDate"></span></div>
+              <div class="r-device" id="rDevice"></div>
+              <div class="r-grade mono" id="rGrade"></div>
+              <div class="r-row"><span class="r-lab">NEW RRP</span><s id="rNew"></s></div>
+              <div class="r-row r-big"><span class="r-lab">LOOPWARE</span><strong id="rPrice"></strong></div>
+              <div class="r-save" id="rSave"></div>
+              <div class="r-row r-mini"><span>12-MO WARRANTY</span><span>INCLUDED</span></div>
+              <div class="r-row r-mini"><span>30-DAY RETURNS</span><span>INCLUDED</span></div>
+              <svg class="barcode" id="barcode" preserveAspectRatio="none" aria-hidden="true"></svg>
+              <div class="r-sku" id="rSku"></div>
+              <button class="btn solid wide" id="rAdd">Add this one to the bench</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planet" class="section planet">
+    <div class="wrap">
+      <div class="section-head"><span class="sh-left mono">04 — FOR THE PLANET</span><span class="sh-right mono">MANUFACTURED ONCE. USED TWICE.</span></div>
+      <h2>Then the planet <em>notices.</em></h2>
+      <p class="planet-lede rv">A laptop’s heaviest environmental cost is invisible: the mined metals, fabricated chips, assembly lines and freight. That’s about 80% of its lifetime carbon — spent before the first boot. Buying refurbished means that cost gets paid once, and used twice.</p>
+      <div class="planet-stats">
+        <div class="stat-hero rv">
+          <div class="sh-num"><span data-count="80" data-prefix="−" data-suffix="%">−0%</span></div>
+          <p class="sh-label">OF MANUFACTURING CARBON AVOIDED VS BUYING NEW — PER DEVICE</p>
+        </div>
+        <div class="stat-side">
+          <div class="ss-row rv" style="--d:.1s">
+            <strong><span data-count="62" data-suffix=" Mt">0</span></strong>
+            <p>of e-waste was generated worldwide in 2022. Barely a fifth of it was formally recycled — the rest became a drawer, or a ditch.</p>
+          </div>
+          <div class="ss-row rv" style="--d:.2s">
+            <strong><span data-count="2" data-prefix="+" data-suffix=" yrs">0</span></strong>
+            <p>of extra life we aim to give every machine. Two more years of service means its carbon cost is spread over twice the work.</p>
+          </div>
+        </div>
+      </div>
+      <div class="bars" id="bars">
+        <div class="bar-row"><span class="bar-label">NEW — MANUFACTURED</span><div class="bar"><i style="--w:100%"></i></div><span class="bar-val">300 KG</span></div>
+        <div class="bar-row"><span class="bar-label">REFURBISHED — RE-CERTIFIED</span><div class="bar"><i class="alt" style="--w:20%"></i></div><span class="bar-val">60 KG</span></div>
+        <p class="bars-cap">CO₂e PER LAPTOP, MANUFACTURING PHASE. THE ~240 KG DIFFERENCE ≈ 1,500 KM OF NOT DRIVING.</p>
+        <p class="bars-src">FIGURES: MANUFACTURER LCA REPORTS · UN GLOBAL E-WASTE MONITOR 2024</p>
+      </div>
+      <div class="tradein rv">
+        <div class="ti-copy">
+          <h3>The loop part.</h3>
+          <p>Got an old device in a drawer? Send it in — working, cracked or completely dead. We revive what can be revived, harvest what can’t, and recycle the rest through certified channels. You get credit; the materials keep circulating.</p>
+        </div>
+        <div class="ti-tool">
+          <div class="ti-field">
+            <label for="tiType">DEVICE</label>
+            <div class="seg" id="tiType">
+              <button class="active" data-v="laptop">LAPTOP</button><button data-v="phone">PHONE</button><button data-v="tablet">TABLET</button>
+            </div>
+          </div>
+          <div class="ti-field">
+            <label for="tiCond">CONDITION</label>
+            <div class="seg" id="tiCond">
+              <button class="active" data-v="working">WORKING</button><button data-v="cracked">CRACKED SCREEN</button><button data-v="dead">COMPLETELY DEAD</button>
+            </div>
+          </div>
+          <div class="ti-quote"><span>ESTIMATED CREDIT</span><strong id="tiQuote">QAR 450 – QAR 950</strong></div>
+          <button class="btn light" id="tiBtn">Reserve a prepaid shipping label</button>
+          <p class="ti-note">DEAD DOESN’T MEAN WORTHLESS — PARTS ARE PARTS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recycle" class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="sh-left mono">05 — NOTHING WASTED</span><span class="sh-right mono">WHEN REPAIR FAILS, RECYCLING WINS</span></div>
+      <h2>When a part can't be saved, <em>we don't landfill it.</em></h2>
+      <p class="body-copy rv">Not everything makes the cut. A cracked logic board, a swollen battery, a shattered display — sometimes a part is just dead. But "dead" doesn't mean "garbage." We strip every unrepairable unit down to its raw materials and route them to certified e-waste partners. The metals get smelted, the plastics get pelletized, the toxics get neutralized.</p>
+
+      <div class="recycle-grid rv">
+        <div class="rc-card">
+          <svg class="rc-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M2 10h2M2 14h2M20 10h2M20 14h2M10 2v2M14 2v2M10 20v2M14 20v2"/></svg>
+          <h4>LOGIC BOARDS</h4>
+          <h3>Smelted for metals.</h3>
+          <p>Gold, silver, copper, and palladium are recovered from dead PCBs. A single ton of circuit boards yields up to 40x more gold than a ton of mined ore — minus the ecological devastation of mining it.</p>
+        </div>
+        <div class="rc-card">
+          <svg class="rc-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="16" height="10" rx="2"/><path d="M21 10v4M7 12h4"/></svg>
+          <h4>BATTERIES</h4>
+          <h3>Hydrometallurgical recovery.</h3>
+          <p>Swollen or end-of-life lithium-ion cells go to specialized recyclers who extract the lithium, cobalt, and nickel. These critical minerals go straight back into the supply chain for new batteries.</p>
+        </div>
+        <div class="rc-card">
+          <svg class="rc-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M5 15h14M9 21h6"/></svg>
+          <h4>SCREENS & GLASS</h4>
+          <h3>Crushed and separated.</h3>
+          <p>Shattered glass and digitizers are crushed. The silica is reused in industrial aggregates, while the thin optical films and indium tin oxide are separated out for specialized reprocessing.</p>
+        </div>
+        <div class="rc-card">
+          <svg class="rc-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c4 0 8 1 8 3v12c0 2-4 3-8 3s-8-1-8-3V6c0-2 4-3 8-3z"/><path d="M4 9c0 2 4 3 8 3s8-1 8-3M4 15c0 2 4 3 8 3s8-1 8-3"/></svg>
+          <h4>CHASSIS & PLASTICS</h4>
+          <h3>Sorted by polymer.</h3>
+          <p>ABS, polycarbonate, and magnesium frames are sorted by polymer type, shredded, and melted down. The resulting pellets are reused for non-critical consumer goods and automotive parts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop" class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="sh-left mono">06 — ON THE BENCH</span><span class="sh-right mono">LIVE INVENTORY — REAL UNITS</span></div>
+      <div class="shop-top">
+        <h2>What’s on the bench <em>right now.</em></h2>
+        <div class="shop-tools">
+          <div class="filters" id="filters" aria-label="Filter products">
+            <button class="active" data-cat="all">ALL</button>
+            <button data-cat="laptops">LAPTOPS</button>
+            <button data-cat="tablets">TABLETS</button>
+            <button data-cat="phones">PHONES</button>
+            <button data-cat="audio">AUDIO</button>
+          </div>
+          <button class="mini-btn accent" id="manageBtn" aria-label="Open catalog manager">✎ MANAGE UNITS</button>
+        </div>
+      </div>
+      <p class="shop-count mono" id="shopCount">9 UNITS ON THE BENCH</p>
+      <div class="ledger-cap mono"><span>Nº</span><span></span><span>UNIT — SPEC — CONDITION</span><span>GRADE · IMPACT · PRICE</span></div>
+      <div class="ledger" id="ledger"></div>
+      <p class="shop-note">EVERY LISTING IS THE EXACT UNIT — GRADED BY HAND, PHOTOGRAPHED FOR REAL. WHEN IT’S GONE, IT’S GONE.</p>
+    </div>
+  </section>
+
+  <div class="ticker alt" aria-hidden="true"><div class="ticker-track" id="tick2">
+    <span class="tick">TRADE-IN OPEN — WORKING, CRACKED OR DEAD, WE TAKE IT</span><span class="tick-sep">///</span>
+    <span class="tick">FREE E-WASTE TAKE-BACK, PREPAID LABEL INCLUDED</span><span class="tick-sep">///</span>
+    <span class="tick">PLASTIC-FREE, RECYCLED PACKAGING SINCE DAY ONE</span><span class="tick-sep">///</span>
+    <span class="tick">12-MONTH WARRANTY ON EVERYTHING THAT SHIPS</span><span class="tick-sep">///</span>
+    <span class="tick">30-DAY RETURNS, NO INTERROGATION</span><span class="tick-sep">///</span>
+  </div></div>
+
+  <section id="faq" class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="sh-left mono">07 — QUESTIONS</span><span class="sh-right mono">THE HONEST ANSWERS</span></div>
+      <h2>Asked, <em>answered.</em></h2>
+      <div class="faq-grid">
+        <div class="faq-left rv">
+          <p class="body-copy">Refurb is still an unfamiliar word to a lot of people, and that’s fair — the industry spent decades blurring it. If something here isn’t covered, ask us directly. The workshop crew answers email between benches, usually within a day.</p>
+          <button class="copy-mail" id="copyMail">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2H3.5A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5"/></svg>
+            HELLO@LOOPWARE.QA
+          </button>
+        </div>
+        <div class="faq-list rv" style="--d:.1s" id="faqList">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Is refurbished just a fancy word for used?</span><svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 5.5l5 5 5-5"/></svg></button>
+            <div class="faq-a"><p>No — and the difference is the whole point. A used device is sold as-is, in whatever state it’s in. A refurbished one has been inspected part by part, repaired where needed, professionally cleaned, data-wiped and graded, then resold with a warranty. You’re buying a certified machine, not someone’s history.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What do the grades actually mean?</span><svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 5.5l5 5 5-5"/></svg></button>
+            <div class="faq-a"><p>They’re cosmetic only — every grade is fully functional. Grade A: no visible wear at arm’s length. Grade B: light marks on the case, screen flawless or near it. Grade C: honest, visible wear — a scratch here, a shiny palm rest there — priced accordingly. Every listing shows photos of the exact unit you’ll get.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>How’s the battery?</span><svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 5.5l5 5 5-5"/></svg></button>
+            <div class="faq-a"><p>Guaranteed at 85% health or better — and if a battery tests below that, we fit brand-new cells before the machine goes on sale. The exact health and cycle count are printed on the passport that ships with your device, so there’s no guessing.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Is it safe? What about the previous owner’s data?</span><svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 5.5l5 5 5-5"/></svg></button>
+            <div class="faq-a"><p>Every drive is erased to the NIST 800-88 standard — the same one governments use — before refurbishment even begins. Drives that can’t be reliably wiped are physically shredded and recycled. Your machine arrives factory-fresh, with nothing aboard but the OS.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What happens to the parts you replace?</span><svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 5.5l5 5 5-5"/></svg></button>
+            <div class="faq-a"><p>Nothing goes in the bin. Dead logic boards are smelted to recover gold and copper; swollen batteries are sent to specialized lithium recyclers; shattered glass and plastics are separated and pelletized for industrial reuse. If a part leaves a machine, it’s because it’s about to become something else.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What if I don’t like it?</span><svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 5.5l5 5 5-5"/></svg></button>
+            <div class="faq-a"><p>Send it back within 30 days with the free return label and get a full refund, no interrogation. Our return rate sits under 4% — the grades are honest, so surprises are rare.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-news">
+        <p class="f-label">THE BENCH REPORT — ONE EMAIL A MONTH</p>
+        <p class="f-copy">New arrivals, restocks and honest price drops. No noise, no “last chance”, unsubscribe anytime.</p>
+        <form id="newsForm" novalidate>
+          <input type="email" id="newsInput" placeholder="you@example.com" aria-label="Email address">
+          <button class="btn fbtn" type="submit">Sign up</button>
+        </form>
+        <span class="form-msg mono" id="formMsg"></span>
+      </div>
+      <div class="foot-links">
+        <div>
+          <h4>EXPLORE</h4>
+          <a href="#what">What is refurb?</a>
+          <a href="#process">The process</a>
+          <a href="#wallet">For your wallet</a>
+          <a href="#planet">For the planet</a>
+        </div>
+        <div>
+          <h4>STORE</h4>
+          <a href="#recycle">Recycling</a>
+          <a href="#shop">On the bench</a>
+          <a href="#planet">Trade-in</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+    </div>
+    <div class="giant-mark" aria-hidden="true">LOOPWARE<span>.</span></div>
+    <div class="foot-base">
+      <span>© 2025 LOOPWARE W.L.L. — Msheireb, DOHA QA</span>
+      <span>ALL PRICES IN QAR · CONCEPT STOREFRONT — PRICES FICTIONAL, ENTHUSIASM REAL</span>
+      <a href="#top">BACK TO TOP ↑</a>
+    </div>
+  </div>
+</footer>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+  <div class="cd-head">
+    <span class="mono">YOUR BENCH — <span id="cdCount">0</span> ITEM(S)</span>
+    <button class="icon-btn" id="cartClose" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  </div>
+  <div class="cd-body" id="cdBody"></div>
+  <div class="cd-foot" id="cdFoot">
+    <div class="cd-row"><span>SUBTOTAL</span><strong id="cdSub">QAR 0</strong></div>
+    <div class="cd-row save"><span>YOU SAVE VS NEW</span><strong id="cdSave">QAR 0</strong></div>
+    <div class="cd-row co2"><span>CO₂ AVOIDED</span><strong id="cdCo2">~0 KG</strong></div>
+    <div class="cd-row"><span>SHIPPING</span><strong>FREE</strong></div>
+    <button class="btn solid wide" id="checkoutBtn">Checkout</button>
+    <p class="cd-note mono">12-MO WARRANTY · 30-DAY RETURNS · PLASTIC-FREE PACK</p>
+  </div>
+</aside>
+
+<aside class="ed-drawer" id="edDrawer" aria-hidden="true" aria-label="Catalog manager">
+  <div class="ed-head">
+    <span class="mono">CATALOG MANAGER</span>
+    <button class="icon-btn" id="edClose" aria-label="Close catalog manager"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  </div>
+  <p class="ed-hint">ADD, EDIT OR REMOVE UNITS. CHANGES SAVE TO THIS BROWSER AUTOMATICALLY (LOCALSTORAGE). “RESET” RESTORES THE DEMO LINE-UP.</p>
+  <div class="ed-body">
+    <div class="ed-listhead">
+      <span class="mono" id="edListCount">9 UNIT(S)</span>
+      <div class="ed-actions-top">
+        <button class="mini-btn accent" id="edNew">＋ NEW UNIT</button>
+        <button class="mini-btn" id="edReset">RESET DEMO CATALOG</button>
+      </div>
+    </div>
+    <div id="edList"></div>
+    <form class="ed-form" id="edForm" novalidate>
+      <p class="ed-form-title" id="edFormTitle">ADD A NEW UNIT</p>
+      <div class="ed-grid">
+        <label class="field span2"><b>UNIT NAME *</b><input id="fName" maxlength="60" placeholder="ThinkPad X1 Carbon G9"></label>
+        <label class="field"><b>CATEGORY</b>
+          <select id="fCat">
+            <option value="laptops">LAPTOPS</option>
+            <option value="tablets">TABLETS</option>
+            <option value="phones">PHONES</option>
+            <option value="audio">AUDIO</option>
+          </select>
+        </label>
+        <label class="field"><b>GRADE</b>
+          <select id="fGrade">
+            <option value="A">A — MINT</option>
+            <option value="B">B — LIGHT WEAR</option>
+            <option value="C">C — HONEST WEAR</option>
+          </select>
+        </label>
+        <label class="field span2"><b>TAGLINE</b><input id="fTag" maxlength="90" placeholder="the corporate workhorse, freed."></label>
+        <label class="field span2"><b>SPECS (MONO LINE)</b><input id="fSpecs" maxlength="90" placeholder="I7-1165G7 · 16GB · 512GB · 2.2K IPS"></label>
+        <label class="field"><b>STOCK</b><input id="fStock" type="number" min="0" max="99" value="1"></label>
+        <label class="field"><b>PRICE (QAR) *</b><input id="fPrice" type="number" min="1" placeholder="2999"></label>
+        <label class="field"><b>WAS / RRP (QAR) *</b><input id="fWas" type="number" min="1" placeholder="5999"></label>
+        <label class="field"><b>CO₂ SAVED (KG)</b><input id="fCo2" type="number" min="0" placeholder="auto"></label>
+        <label class="field span2"><b>BADGE (OPTIONAL)</b><input id="fBadge" maxlength="24" placeholder="BEST VALUE"></label>
+      </div>
+      <p class="ed-msg" id="edMsg"></p>
+      <div class="ed-actions">
+        <button type="submit" class="btn solid" id="edSubmit">Add to ledger</button>
+        <button type="button" class="btn ghost" id="edCancel" style="display:none">Cancel</button>
+      </div>
+    </form>
+  </div>
+</aside>
+
+<div class="toaster" id="toaster" aria-live="polite"></div>
+
+<script src="catalog.js"></script>
+<script>
+/* ================= helpers ================= */
+document.documentElement.classList.replace('no-js','js');
+const $  = (s,c=document)=>c.querySelector(s);
+const $$ = (s,c=document)=>[...c.querySelectorAll(s)];
+const money = n => 'QAR ' + Math.round(n).toLocaleString('en-US');
+const esc = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const sleep = ms => new Promise(r=>setTimeout(r,ms));
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function toast(msg){
+  const t=document.createElement('div'); t.className='toast'; t.textContent=msg;
+  $('#toaster').appendChild(t);
+  requestAnimationFrame(()=>t.classList.add('on'));
+  setTimeout(()=>{t.classList.remove('on'); setTimeout(()=>t.remove(),400);},3400);
+}
+
+/* ================= theme toggle ================= */
+const SUN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5 5l1.7 1.7M17.3 17.3 19 19M19 5l-1.7 1.7M6.7 17.3 5 19"/></svg>';
+const MOON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.2A8.2 8.2 0 1 1 10.8 3.4a6.6 6.6 0 0 0 9.8 9.8Z"/></svg>';
+const metaTheme=$('#metaTheme');
+function themeIcon(){
+  const dark=document.documentElement.dataset.theme==='dark';
+  const b=$('#themeBtn');
+  b.innerHTML=dark?SUN:MOON;
+  b.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');
+  if(metaTheme) metaTheme.content=dark?'#161310':'#F2EEE3';
+}
+ $('#themeBtn').addEventListener('click',()=>{
+  const dark=document.documentElement.dataset.theme==='dark';
+  const next=dark?'light':'dark';
+  document.documentElement.dataset.theme=next;
+  try{localStorage.setItem('loopware_theme',next);}catch(e){}
+  themeIcon();
+  const b=$('#themeBtn'); b.classList.remove('spin'); void b.offsetWidth; b.classList.add('spin');
+  toast(dark?'Lights up — back to workshop daylight.':'Lights down — dark mode on.');
+});
+themeIcon();
+
+/* ================= header / menu ================= */
+addEventListener('scroll',()=>$('#siteHeader').classList.toggle('scrolled',scrollY>8),{passive:true});
+const mmenu=$('#mmenu');
+function openMenu(){ mmenu.classList.add('open'); mmenu.setAttribute('aria-hidden','false'); }
+function closeMenu(){ mmenu.classList.remove('open'); mmenu.setAttribute('aria-hidden','true'); }
+ $('#menuBtn').addEventListener('click',openMenu);
+ $('#mmClose').addEventListener('click',closeMenu);
+mmenu.addEventListener('click',e=>{ if(e.target.closest('a')) closeMenu(); });
+
+/* ================= tickers ================= */
+['#tick1','#tick2'].forEach(s=>{ const t=$(s); t.innerHTML+=t.innerHTML; });
+
+/* ================= hero: diagnostic typing ================= */
+const dls=[0,1,2,3,4,5,6].map(i=>document.getElementById('dl'+i));
+const LINE_Y=[70,90,110,130,150,170,194];
+const cur=$('#cur'), vbox=$('#vBox');
+const randSN=()=>String(Math.floor(Math.random()*90000)+10000);
+const diagLines=()=>[
+  '> LOOPWARE DIAG v3.2.1',
+  `> S/N LW-25-${randSN()} ..... OK`,
+  '> DISPLAY ....... 0 DEAD PX',
+  '> BATTERY ... 94% · 214 CYC',
+  '> KEYBOARD ...... 78/78',
+  '> I/O ........... ALL OK',
+  'VERDICT: GRADE A — CERTIFIED'
+];
+async function typeLoop(){
+  if(reduced){ const L=diagLines(); dls.forEach((el,i)=>el.textContent=L[i]); vbox.style.opacity=1; return; }
+  for(;;){
+    dls.forEach(el=>el.textContent=''); vbox.style.opacity=0;
+    const L=diagLines();
+    for(let i=0;i<L.length;i++){
+      if(i===6) vbox.style.opacity=1;
+      const el=dls[i];
+      for(const ch of L[i]){
+        el.textContent+=ch;
+        cur.setAttribute('x',148+el.getComputedTextLength()+3);
+        cur.setAttribute('y',LINE_Y[i]-10);
+        await sleep(15);
+      }
+      await sleep(i===6?500:110);
+    }
+    await sleep(3400);
+  }
+}
+typeLoop();
+
+/* ================= hero: hotspots ================= */
+const HS={
+  display:['DISPLAY','uniformity & dead-pixel sweep: 0 defects found. 397 nits measured.'],
+  battery:['BATTERY','94% health, 214 cycles — above the 85% spec, so it stays. Under it, we fit new cells.'],
+  keyboard:['KEYBOARD','every key pressed 1,000× by the rig. 78/78 registered, first try.'],
+  io:['I/O','every port, every pin, data + charge tested. HDMI shell: micro-scratches. Contacts: perfect.']
+};
+ $$('.hs').forEach(h=>{
+  const go=()=>{ $$('.hs').forEach(x=>x.classList.remove('on')); h.classList.add('on');
+    const [t,d]=HS[h.dataset.key]; $('#readout').innerHTML=`<span>${t} —</span> ${d}`; };
+  h.addEventListener('mouseenter',go);
+  h.addEventListener('click',go);
+  h.addEventListener('focus',go);
+});
+
+/* ================= hero: stamp ================= */
+const stamp=$('#stamp');
+function restamp(){ stamp.classList.remove('pop'); void stamp.offsetWidth; stamp.classList.add('pop'); }
+stamp.addEventListener('click',restamp);
+stamp.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();restamp();} });
+
+/* ================= reveal / counters / bars ================= */
+const rio=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('in'); rio.unobserve(e.target);} }),{threshold:.15});
+ $$('.rv').forEach(el=>rio.observe(el));
+function observeRv(){ $$('.rv').forEach(el=>{ if(!el.classList.contains('in')) rio.observe(el); }); }
+
+function runCount(el){
+  const t=+el.dataset.count, pre=el.dataset.prefix||'', suf=el.dataset.suffix||'', st=performance.now(), dur=1500;
+  (function f(n){ const p=Math.min(1,(n-st)/dur), e=1-Math.pow(1-p,3);
+    el.textContent=pre+Math.round(t*e)+suf; if(p<1)requestAnimationFrame(f); })(st);
+}
+const cio=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){runCount(e.target); cio.unobserve(e.target);} }),{threshold:.6});
+ $$('[data-count]').forEach(el=>cio.observe(el));
+
+new IntersectionObserver((es,o)=>es.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('bars-in'); o.unobserve(e.target);} }),{threshold:.4}).observe($('#bars'));
+
+/* ================= 02 process scroll sync ================= */
+const steps=$$('#steps .step');
+let curStep=-1;
+function setStep(i){
+  if(i===curStep) return; curStep=i;
+  steps.forEach((s,j)=>s.classList.toggle('on',j<=i));
+  const n=$('#stickyNum'), t=$('#stickyTitle');
+  n.textContent=steps[i].dataset.num; t.textContent=steps[i].dataset.title;
+  [n,t].forEach(el=>{el.classList.remove('swap'); void el.offsetWidth; el.classList.add('swap');});
+  $('#pFill').style.height=((i+1)/steps.length*100)+'%';
+}
+const stepObs=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting) setStep(steps.indexOf(e.target)); }),{rootMargin:'-42% 0px -52% 0px'});
+steps.forEach(s=>stepObs.observe(s));
+
+/* ---- catalog state + localStorage persistence ---- */
+function sanitize(p,i=0){
+  const pos=(v,d)=>{ v=parseFloat(v); return isFinite(v)&&v>0?v:d; };
+  return {
+    id:String(p.id||('u'+Date.now().toString(36)+i)).replace(/[^a-zA-Z0-9_-]/g,'').slice(0,24)||('u'+Date.now().toString(36)+i),
+    cat:CATS.includes(p.cat)?p.cat:'laptops',
+    name:String(p.name||'Unnamed unit').slice(0,60),
+    tag:String(p.tag||'').slice(0,90),
+    specs:String(p.specs||'').slice(0,90),
+    grade:['A','B','C'].includes(p.grade)?p.grade:'B',
+    stock:Math.max(0,Math.min(99,parseInt(p.stock)||0)),
+    price:pos(p.price,999),
+    was:pos(p.was,1999),
+    co2:Math.max(0,parseFloat(p.co2)||0),
+    badge:String(p.badge||'').slice(0,24).toUpperCase()
+  };
+}
+const LS_KEY='loopware_catalog_v1';
+const defaultCatalog=()=>JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+let catalog=(function(){
+  try{
+    const raw=localStorage.getItem(LS_KEY);
+    if(raw){ const arr=JSON.parse(raw); if(Array.isArray(arr)&&arr.length) return arr.map(sanitize); }
+  }catch(e){}
+  return defaultCatalog();
+})();
+function persist(){ try{ localStorage.setItem(LS_KEY,JSON.stringify(catalog)); }catch(e){} }
+
+/* ---- ledger rendering ---- */
+function thumbSVG(cat){
+  const kind={laptops:'laptop',tablets:'tablet',phones:'phone',audio:'audio'}[cat]||'laptop';
+  const L={
+    laptop:`<rect x="18" y="6" width="60" height="40" rx="4" class="body"/><rect x="23" y="11" width="50" height="30" class="scr"/><path d="M12 52h72l8 7H4z" class="body"/>`,
+    tablet:`<rect x="26" y="4" width="44" height="56" rx="5" class="body"/><rect x="31" y="11" width="34" height="40" class="scr"/><circle cx="48" cy="56" r="2.2" class="dot"/>`,
+    phone:`<rect x="33" y="4" width="30" height="56" rx="6" class="body"/><rect x="37" y="11" width="22" height="42" class="scr"/><line x1="43" y1="7.5" x2="53" y2="7.5" class="body"/>`,
+    audio:`<path d="M22 40v-4a26 26 0 0 1 52 0v4" class="body"/><rect x="16" y="38" width="12" height="20" rx="4" class="body"/><rect x="68" y="38" width="12" height="20" rx="4" class="body"/><rect x="19" y="42" width="6" height="12" rx="2" class="scr"/><rect x="71" y="42" width="6" height="12" rx="2" class="scr"/>`
+  };
+  return `<svg viewBox="0 0 96 64" class="thumb" aria-hidden="true">${L[kind]}</svg>`;
+}
+function rowHTML(p,i){
+  const stockChip = p.stock<=0
+    ? '<span class="chip hot">OUT OF STOCK</span>'
+    : `<span class="chip ${p.stock===1?'hot':''}">${p.stock===1?'FINAL UNIT':p.stock+' IN STOCK'}</span>`;
+  const addBtn = p.stock<=0
+    ? '<button class="add-btn" disabled title="Sold out">SOLD</button>'
+    : `<button class="add-btn" data-id="${p.id}">+ ADD</button>`;
+  return `<article class="row rv" style="--d:${(i*0.04).toFixed(2)}s" data-cat="${p.cat}">
+    <span class="row-idx mono">${String(i+1).padStart(2,'0')}</span>
+    <div class="row-thumb">${thumbSVG(p.cat)}</div>
+    <div class="row-main">
+      <h3>${esc(p.name)} <span class="row-tag">— ${esc(p.tag)}</span></h3>
+      <div class="row-specs mono">${esc(p.specs)}</div>
+    </div>
+    <div class="row-side">
+      <div class="row-badges">
+        <span class="grade g${p.grade}" title="Grade ${p.grade}">${p.grade}</span>
+        ${p.badge?`<span class="chip hot">${esc(p.badge)}</span>`:''}
+        <span class="chip">−${p.co2} KG CO₂</span>
+        ${stockChip}
+      </div>
+      <div class="row-price"><s>${money(p.was)}</s><strong>${money(p.price)}</strong></div>
+      ${addBtn}
+    </div>
+  </article>`;
+}
+let curCat='all';
+function applyFilter(cat){
+  let n=0;
+  $$('#ledger .row').forEach(r=>{ const show=cat==='all'||r.dataset.cat===cat; r.classList.toggle('hide',!show); if(show)n++; });
+  $('#shopCount').textContent=`${n} UNIT${n===1?'':'S'} ON THE BENCH`;
+}
+function renderLedger(){
+  const el=$('#ledger');
+  el.innerHTML=catalog.length
+    ? catalog.map(rowHTML).join('')
+    : '<div class="shop-empty">LEDGER EMPTY — ADD UNITS VIA “✎ MANAGE UNITS”, OR RESET THE DEMO CATALOG.</div>';
+  observeRv();
+  applyFilter(curCat);
+}
+ $('#filters').addEventListener('click',e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  $$('#filters button').forEach(x=>x.classList.toggle('active',x===b));
+  curCat=b.dataset.cat; applyFilter(curCat);
+});
+
+/* ================= 03 price-check calculator ================= */
+function gradePrices(p){
+  const q = n => Math.max(9, Math.round(n/10)*10 - 1);
+  const baseA = p.grade==='A' ? p.price : p.grade==='B' ? p.price/0.9 : p.price/0.8;
+  const A = p.grade==='A' ? p.price : q(baseA);
+  return { A, B: p.grade==='B' ? p.price : q(A*0.9), C: p.grade==='C' ? p.price : q(A*0.8) };
+}
+function featuredProducts(){ return FEATURED_IDS.map(id=>catalog.find(p=>p.id===id)).filter(Boolean); }
+
+const GRADE_NOTE={A:'GRADE A — NO VISIBLE WEAR', B:'GRADE B — LIGHT MARKS, FULLY FUNCTIONAL', C:'GRADE C — LIVED-IN, PRICED LIKE IT'};
+const HINTS={A:'NO VISIBLE WEAR AT ARM’S LENGTH', B:'LIGHT MARKS — NEVER FUNCTIONAL', C:'VISIBLE WEAR — FULLY FUNCTIONAL'};
+let calcId=null, calcGrade='A', shownPrice=0;
+
+function rebuildCalc(){
+  const feats=featuredProducts(), tabs=$('#calcTabs');
+  if(!feats.length){ tabs.innerHTML='<button type="button" disabled>NO UNITS</button>'; }
+  else tabs.innerHTML=feats.map(p=>`<button type="button" data-id="${p.id}" class="${p.id===calcId?'active':''}">${esc(p.name.toUpperCase())}</button>`).join('');
+  if(!feats.find(p=>p.id===calcId)) calcId=feats[0]?feats[0].id:null;
+}
+function animNum(el,from,to,fmt){
+  if(reduced||from===to){ el.textContent=fmt(to); return; }
+  const st=performance.now(), dur=550;
+  (function f(n){ const p=Math.min(1,(n-st)/dur), e=1-Math.pow(1-p,3);
+    el.textContent=fmt(from+(to-from)*e); if(p<1)requestAnimationFrame(f); })(st);
+}
+function renderCalc(){
+  const p=catalog.find(x=>x.id===calcId);
+  const dev=$('#rDevice'), grd=$('#rGrade'), nw=$('#rNew'), pr=$('#rPrice'), sv=$('#rSave'), add=$('#rAdd');
+  if(!p){
+    dev.textContent='—'; grd.textContent='NO FEATURED UNITS LEFT';
+    $('#calcHint').textContent='ADD UNITS WITH IDS x1c / mba / ipad — OR EDIT FEATURED_IDS';
+    nw.textContent='—'; pr.textContent='—'; sv.style.display='none'; add.disabled=true;
+    return;
+  }
+  sv.style.display=''; add.disabled=false;
+  const g=gradePrices(p), price=g[calcGrade], save=Math.max(0,p.was-price), pct=Math.round(save/p.was*100);
+  dev.textContent=p.name;
+  grd.textContent=GRADE_NOTE[calcGrade];
+  $('#calcHint').textContent='GRADE '+calcGrade+' — '+HINTS[calcGrade];
+  nw.textContent=money(p.was);
+  sv.textContent=`YOU SAVE ${money(save)} — ${pct}%`;
+  $('#rSku').textContent=`LW-${p.id.toUpperCase().slice(0,5)}-${calcGrade}-${String(g[calcGrade]).slice(-4)}`;
+  animNum(pr,shownPrice,price,money); shownPrice=price;
+}
+ $('#calcTabs').addEventListener('click',e=>{
+  const b=e.target.closest('button[data-id]'); if(!b) return;
+  calcId=b.dataset.id; rebuildCalc(); renderCalc();
+});
+ $('#calcGrades').addEventListener('click',e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  $$('#calcGrades button').forEach(x=>x.classList.toggle('active',x===b));
+  calcGrade=b.dataset.g; renderCalc();
+});
+ $('#rNum').textContent='EST. Nº LW-'+(1000+Math.floor(Math.random()*9000));
+ $('#rDate').textContent=new Date().toISOString().slice(0,10);
+
+(function(){
+  const bc=$('#barcode'); let bx=0, s='';
+  [3,1,2,4,1,3,2,1,5,2,1,3,1,2,4,1,2,3,1,1,4,2,3,1,2].forEach((w,i)=>{
+    if(i%2===0) s+=`<rect x="${bx}" y="0" width="${w}" height="26"/>`;
+    bx+=w+(i%3===0?3:2);
+  });
+  bc.setAttribute('viewBox',`0 0 ${bx} 26`); bc.innerHTML=s;
+})();
+
+/* ================= cart ================= */
+const cart=new Map();
+function badgePop(){ const cc=$('#cartCount'); cc.classList.remove('pop'); void cc.offsetWidth; cc.classList.add('pop'); }
+function addToCart(data,key){
+  const ex=cart.get(key);
+  if(ex) ex.qty++; else cart.set(key,{qty:1,data,k:key});
+  renderCart(); badgePop();
+  toast(`Added — ${data.name} · Grade ${data.grade}`);
+}
+function renderCart(){
+  const vals=[...cart.values()], count=vals.reduce((a,c)=>a+c.qty,0);
+  $('#cartCount').textContent=count; $('#cdCount').textContent=count;
+  const body=$('#cdBody'), foot=$('#cdFoot');
+  if(!count){
+    foot.style.display='none';
+    body.innerHTML=`<div class="cd-empty"><span class="mono">NOTHING ON YOUR BENCH YET.</span><p>The machines are downstairs — graded, tested, waiting.</p><button class="btn ghost" id="cdBrowse">Browse the shop</button></div>`;
+    return;
+  }
+  foot.style.display='';
+  body.innerHTML=vals.map(it=>`
+    <div class="cd-item">
+      <div class="cd-info"><strong>${esc(it.data.name)}</strong><span class="mono">GRADE ${it.data.grade} · ${money(it.data.price)} EACH</span></div>
+      <div class="cd-qty"><button data-act="dec" data-k="${it.k}" aria-label="Decrease quantity">−</button><span>${it.qty}</span><button data-act="inc" data-k="${it.k}" aria-label="Increase quantity">+</button></div>
+      <strong>${money(it.data.price*it.qty)}</strong>
+      <button class="cd-x" data-act="rm" data-k="${it.k}" aria-label="Remove item">✕</button>
+    </div>`).join('');
+  let sub=0,save=0,co2=0;
+  vals.forEach(({qty,data})=>{ sub+=data.price*qty; save+=(data.was-data.price)*qty; co2+=data.co2*qty; });
+  $('#cdSub').textContent=money(sub);
+  $('#cdSave').textContent='−'+money(save);
+  $('#cdCo2').textContent='~'+co2+' KG';
+}
+ $('#cdBody').addEventListener('click',e=>{
+  if(e.target.closest('#cdBrowse')){ closeCart(); $('#shop').scrollIntoView({behavior:'smooth'}); return; }
+  const b=e.target.closest('[data-act]'); if(!b) return;
+  const it=cart.get(b.dataset.k); if(!it) return;
+  if(b.dataset.act==='inc') it.qty++;
+  if(b.dataset.act==='dec'){ it.qty--; if(it.qty<1) cart.delete(it.k); }
+  if(b.dataset.act==='rm') cart.delete(it.k);
+  renderCart();
+});
+ $('#ledger').addEventListener('click',e=>{
+  const b=e.target.closest('.add-btn'); if(!b||b.disabled) return;
+  const p=catalog.find(x=>x.id===b.dataset.id); if(!p) return;
+  addToCart(p,`${p.id}-${p.grade}`);
+  b.classList.add('ok'); b.textContent='ADDED ✓';
+  setTimeout(()=>{b.classList.remove('ok'); b.textContent='+ ADD';},1300);
+});
+ $('#rAdd').addEventListener('click',()=>{
+  const p=catalog.find(x=>x.id===calcId); if(!p) return;
+  const g=gradePrices(p);
+  addToCart({id:`${p.id}-${calcGrade}`,name:p.name,grade:calcGrade,price:g[calcGrade],was:p.was,co2:p.co2},`${p.id}-${calcGrade}`);
+});
+
+/* ---- drawers: shared overlay & scroll lock ---- */
+function lockScroll(on){ document.body.style.overflow=on?'hidden':''; }
+function openCart(){ closeEditor(); $('#cartDrawer').classList.add('open'); $('#drawerOverlay').classList.add('on'); $('#cartDrawer').setAttribute('aria-hidden','false'); lockScroll(true); renderCart(); }
+function closeCart(){ $('#cartDrawer').classList.remove('open'); $('#cartDrawer').setAttribute('aria-hidden','true'); if(!edDrawer.classList.contains('open')){ $('#drawerOverlay').classList.remove('on'); lockScroll(false); } }
+ $('#cartOpen').addEventListener('click',openCart);
+ $('#cartClose').addEventListener('click',closeCart);
+ $('#drawerOverlay').addEventListener('click',()=>{ closeCart(); closeEditor(); });
+ $('#checkoutBtn').addEventListener('click',()=>toast('Concept store — nothing was charged. Somewhere, a laptop just rebooted happily.'));
+addEventListener('keydown',e=>{ if(e.key==='Escape'){ closeCart(); closeEditor(); closeMenu(); } });
+
+/* ================= catalog manager ================= */
+const edDrawer=$('#edDrawer');
+let editingId=null;
+
+function openEditor(){ closeCart(); renderEdList(); edDrawer.classList.add('open'); edDrawer.setAttribute('aria-hidden','false'); $('#drawerOverlay').classList.add('on'); lockScroll(true); }
+function closeEditor(){ edDrawer.classList.remove('open'); edDrawer.setAttribute('aria-hidden','true'); if(!$('#cartDrawer').classList.contains('open')){ $('#drawerOverlay').classList.remove('on'); lockScroll(false); } }
+ $('#manageBtn').addEventListener('click',openEditor);
+ $('#edClose').addEventListener('click',closeEditor);
+
+function renderEdList(){
+  $('#edListCount').textContent=catalog.length+' UNIT(S)';
+  $('#edList').innerHTML=catalog.length?catalog.map((p,i)=>`
+    <div class="ed-row ${p.id===editingId?'editing':''}">
+      <span class="idx mono">${String(i+1).padStart(2,'0')}</span>
+      <div class="n"><strong>${esc(p.name)}</strong><span>GRADE ${p.grade} · ${money(p.price)} · ${p.stock} IN STOCK${p.id===editingId?' · EDITING':''}</span></div>
+      <button class="mini-btn" data-ed="${p.id}">EDIT</button>
+      <button class="mini-btn danger" data-rm="${p.id}">REMOVE</button>
+    </div>`).join('')
+  :'<div class="shop-empty" style="border:0">NOTHING HERE YET — ADD YOUR FIRST UNIT BELOW.</div>';
+}
+function clearForm(){
+  editingId=null;
+  $('#edForm').reset(); $('#fStock').value=1; $('#fCo2').value='';
+  $('#edFormTitle').textContent='ADD A NEW UNIT';
+  $('#edSubmit').textContent='Add to ledger';
+  $('#edCancel').style.display='none';
+  $('#edMsg').textContent='';
+  renderEdList();
+}
+function startEdit(id){
+  const p=catalog.find(x=>x.id===id); if(!p) return;
+  editingId=id;
+  $('#fName').value=p.name; $('#fCat').value=p.cat; $('#fGrade').value=p.grade;
+  $('#fTag').value=p.tag; $('#fSpecs').value=p.specs;
+  $('#fStock').value=p.stock; $('#fPrice').value=p.price; $('#fWas').value=p.was;
+  $('#fCo2').value=p.co2||''; $('#fBadge').value=p.badge||'';
+  $('#edFormTitle').textContent='EDITING — '+p.name.toUpperCase();
+  $('#edSubmit').textContent='Save changes';
+  $('#edCancel').style.display='';
+  $('#edMsg').textContent='';
+  renderEdList();
+  $('#edForm').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function removeUnit(id){
+  const p=catalog.find(x=>x.id===id); if(!p) return;
+  catalog=catalog.filter(x=>x.id!==id);
+  if(editingId===id) clearForm(); else renderEdList();
+  persist(); rebuildAll();
+  toast(`Removed from the ledger — ${p.name}`);
+}
+function rebuildAll(){ renderLedger(); rebuildCalc(); renderCalc(); }
+
+ $('#edList').addEventListener('click',e=>{
+  const rm=e.target.closest('[data-rm]');
+  if(rm){
+    if(rm.classList.contains('armed')){ removeUnit(rm.dataset.rm); }
+    else{
+      rm.classList.add('armed'); rm.textContent='SURE?';
+      setTimeout(()=>{ rm.classList.remove('armed'); rm.textContent='REMOVE'; },2400);
+    }
+    return;
+  }
+  const ed=e.target.closest('[data-ed]');
+  if(ed) startEdit(ed.dataset.ed);
+});
+ $('#edNew').addEventListener('click',()=>{ clearForm(); $('#fName').focus(); });
+ $('#edCancel').addEventListener('click',clearForm);
+
+ $('#fCat').addEventListener('change',()=>{
+  const f=$('#fCo2');
+  if(!f.value||parseFloat(f.value)<=0) f.value=CO2_DEFAULT[$('#fCat').value];
+});
+
+ $('#edForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const name=$('#fName').value.trim();
+  const price=parseFloat($('#fPrice').value);
+  const was=parseFloat($('#fWas').value);
+  const msg=$('#edMsg');
+  if(!name){ msg.textContent='GIVE THE UNIT A NAME.'; $('#fName').focus(); return; }
+  if(!(price>0)){ msg.textContent='PRICE (QAR) MUST BE MORE THAN 0.'; $('#fPrice').focus(); return; }
+  if(!(was>0)){ msg.textContent='WAS / RRP (QAR) MUST BE MORE THAN 0.'; $('#fWas').focus(); return; }
+  if(was<price){ msg.textContent='RRP SHOULD BE ≥ PRICE — OTHERWISE “YOU SAVE” GOES NEGATIVE.'; $('#fWas').focus(); return; }
+  const cat=$('#fCat').value;
+  const data={
+    cat, name, grade:$('#fGrade').value,
+    tag:$('#fTag').value.trim(), specs:$('#fSpecs').value.trim(),
+    stock:Math.max(0,Math.min(99,parseInt($('#fStock').value)||0)),
+    price, was,
+    co2:Math.max(0,parseFloat($('#fCo2').value)||CO2_DEFAULT[cat]),
+    badge:$('#fBadge').value.trim().toUpperCase()
+  };
+  if(editingId){
+    const p=catalog.find(x=>x.id===editingId);
+    if(p) Object.assign(p,data);
+    toast(`Updated — ${data.name}`);
+  }else{
+    data.id='u'+Date.now().toString(36)+Math.floor(Math.random()*99);
+    catalog.push(sanitize(data));
+    toast(`Added to the ledger — ${data.name}`);
+  }
+  persist(); clearForm(); rebuildAll();
+});
+
+ $('#edReset').addEventListener('click',e=>{
+  const b=e.currentTarget;
+  if(!b.classList.contains('armed')){
+    b.classList.add('armed'); b.textContent='SURE? THIS WIPES YOUR EDITS';
+    setTimeout(()=>{ b.classList.remove('armed'); b.textContent='RESET DEMO CATALOG'; },2600);
+    return;
+  }
+  b.classList.remove('armed'); b.textContent='RESET DEMO CATALOG';
+  try{ localStorage.removeItem(LS_KEY); }catch(err){}
+  catalog=defaultCatalog(); clearForm(); rebuildAll();
+  toast('Catalog reset to the demo line-up.');
+});
+
+/* ================= 04 trade-in estimator ================= */
+const TI_BASE={laptop:[450,950],phone:[220,520],tablet:[180,440]};
+const TI_COND={working:[1,1],cracked:[.45,.5],dead:[.08,.15]};
+let tiT='laptop', tiC='working';
+function renderTI(){
+  const b=TI_BASE[tiT], m=TI_COND[tiC];
+  const lo=Math.round(b[0]*m[0]/5)*5, hi=Math.round(b[1]*m[1]/5)*5;
+  const q=$('#tiQuote');
+  q.textContent=`QAR ${lo} – QAR ${hi}`;
+  q.classList.remove('pop'); void q.offsetWidth; q.classList.add('pop');
+}
+[['#tiType',v=>tiT=v],['#tiCond',v=>tiC=v]].forEach(([sel,set])=>{
+  $(sel).addEventListener('click',e=>{
+    const b=e.target.closest('button'); if(!b) return;
+    $$(sel+' button').forEach(x=>x.classList.toggle('active',x===b));
+    set(b.dataset.v); renderTI();
+  });
+});
+ $('#tiBtn').addEventListener('click',()=>toast('Concept demo — but in real life, a prepaid label would already be in your inbox.'));
+
+/* ================= FAQ accordion ================= */
+ $$('.faq-q').forEach(q=>q.addEventListener('click',()=>{
+  const item=q.parentElement, body=q.nextElementSibling, open=q.getAttribute('aria-expanded')==='true';
+  $$('.faq-item.open').forEach(o=>{
+    if(o!==item){ o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight=null; o.querySelector('.faq-q').setAttribute('aria-expanded','false'); }
+  });
+  q.setAttribute('aria-expanded',String(!open));
+  item.classList.toggle('open',!open);
+  body.style.maxHeight=!open?body.scrollHeight+'px':null;
+}));
+
+/* ================= newsletter & copy email ================= */
+ $('#newsForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const inp=$('#newsInput'), msg=$('#formMsg'), v=inp.value.trim();
+  if(!/^\S+@\S+\.\S+$/.test(v)){
+    $('#newsForm').classList.add('err');
+    msg.textContent='THAT ADDRESS LOOKS OFF — ONE MORE TRY?';
+    return;
+  }
+  $('#newsForm').classList.remove('err'); msg.textContent='';
+  inp.value='';
+  toast('You’re on the list. One good email a month, promise.');
+});
+ $('#copyMail').addEventListener('click',async()=>{
+  try{ await navigator.clipboard.writeText('hello@loopware.qa'); toast('hello@loopware.qa — copied to clipboard.'); }
+  catch{ toast('hello@loopware.qa — jot it down old-school.'); }
+});
+
+/* ================= init ================= */
+renderLedger();
+rebuildCalc();
+renderCalc();
+renderCart();
+renderTI();
+renderEdList();
+</script>
+</body>
+</html>
